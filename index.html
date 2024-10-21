@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Company Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #282c34;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 100px;
+            border-radius: 50%;
+        }
+        header h1 {
+            color: #fff;
+            margin: 10px 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+        .grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card .content {
+            padding: 20px;
+        }
+        .product-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .product-card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #777;
+        }
+        .product-card a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .product-card a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="your-logo.png" alt="Company Logo">
+        <h1>Your Company Name</h1>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="app1-image.png" alt="App 1">
+                <div class="content">
+                    <h2>App 1 Name</h2>
+                    <p>Short description of App 1. Highlight its main features and benefits.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.yourapp1" target="_blank">View on Google Play</a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="app2-image.png" alt="App 2">
+                <div class="content">
+                    <h2>App 2 Name</h2>
+                    <p>Short description of App 2. Highlight its main features and benefits.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.yourapp2" target="_blank">View on Google Play</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
