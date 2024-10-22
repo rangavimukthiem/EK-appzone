@@ -82,6 +82,32 @@
         .product-card a:hover {
             background-color: #0056b3;
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .product-card {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .product-card img {
+                height: 150px;
+            }
+            .product-card h2 {
+                font-size: 1.2rem;
+            }
+            .product-card p {
+                font-size: 0.9rem;
+            }
+            .product-card a {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
     </style>
 </head>
 <body>
